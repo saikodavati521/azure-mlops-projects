@@ -2,6 +2,11 @@
 
 CategoryIQ is an end-to-end, Python-based machine-learning platform for automatically classifying e-commerce products into relevant categories and subcategories. It validates product datasets, cleans and preprocesses product text, generates TF-IDF features, trains and compares classification models, and saves the best-performing model for reuse. Users can submit product descriptions through the FastAPI backend or use the Streamlit dashboard to make predictions and view metrics. PostgreSQL stores product, prediction, and model information, while MLflow tracks experiments and model artifacts. The complete application is packaged as a Docker image and deployed on Microsoft Azure, with Azure ML configuration for cloud-based training and managed model-serving workflows.
 
+
+ARCHITECTURE : 
+
+
+
 The project works through the following steps:
 
 1. Load product data: Product CSV files are loaded from the raw data directory for classification.

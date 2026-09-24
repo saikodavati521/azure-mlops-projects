@@ -1,0 +1,212 @@
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/08/10 23:42:16 WARNING mlflow.server: MLflow job execution requirements not met (MLflow job backend does not support Windows system.). Server will start without job execution support. Errors will be surfaced at job invocation time.
+2026/08/10 23:42:17 INFO:     Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2026/08/10 23:42:17 INFO:     Started parent process [60444]
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/08/10 23:42:22 INFO:     Started server process [72108]
+2026/08/10 23:42:22 INFO:     Started server process [38180]
+2026/08/10 23:42:22 INFO:     Started server process [69720]
+2026/08/10 23:42:22 INFO:     Started server process [74280]
+2026/08/10 23:42:22 INFO:     Waiting for application startup.
+2026/08/10 23:42:22 INFO:     Waiting for application startup.
+2026/08/10 23:42:22 INFO:     Waiting for application startup.
+2026/08/10 23:42:22 INFO:     Waiting for application startup.
+2026/08/10 23:42:22 INFO:     Application startup complete.
+2026/08/10 23:42:22 INFO:     Application startup complete.
+2026/08/10 23:42:22 INFO:     Application startup complete.
+2026/08/10 23:42:22 INFO:     Application startup complete.
+2026/08/25 08:17:01 ERROR:    Traceback (most recent call last):
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10055] An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\supervisors\multiprocess.py", line 77, in target
+    self.server.run(sockets)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10055] An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full
+2026/08/25 08:17:08 INFO:     Waiting for child process [72108]
+2026/08/25 08:17:08 INFO:     Child process [72108] died
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/08/25 08:17:19 INFO:     Started server process [39552]
+2026/08/25 08:17:19 INFO:     Waiting for application startup.
+2026/08/25 08:17:19 INFO:     Application startup complete.
+2026/08/28 20:46:42 ERROR:    Traceback (most recent call last):
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10055] An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\supervisors\multiprocess.py", line 77, in target
+    self.server.run(sockets)
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\uvicorn\_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phani\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10055] An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full
+2026/08/28 20:46:47 INFO:     Waiting for child process [69720]
+2026/08/28 20:46:47 INFO:     Child process [69720] died
+c:\Users\phani\Documents\CategoryIQ AI-Powered Product Classification Platform with Azure MLOps\.venv\Lib\site-packages\mlflow\server\fastapi_app.py:17: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/08/28 20:47:11 INFO:     Started server process [9356]
+2026/08/28 20:47:11 INFO:     Waiting for application startup.
+2026/08/28 20:47:11 INFO:     Application startup complete.
+2026/08/29 10:08:22 INFO:     Waiting for child process [9356]
+2026/08/29 10:08:22 INFO:     Child process [9356] died
+2026/08/29 10:08:22 INFO:     Waiting for child process [63792]
+2026/08/29 10:08:22 INFO:     Child process [63792] died
+2026/08/29 10:08:23 INFO:     Waiting for child process [13316]
+2026/08/29 10:08:23 INFO:     Child process [13316] died
+2026/08/29 10:08:23 INFO:     Waiting for child process [9300]
+2026/08/29 10:08:23 INFO:     Child process [9300] died
+2026/08/29 10:08:24 INFO:     Waiting for child process [12948]
+2026/08/29 10:08:24 INFO:     Child process [12948] died
+2026/08/29 10:08:24 INFO:     Waiting for child process [90000]
+2026/08/29 10:08:24 INFO:     Child process [90000] died
+2026/08/29 10:08:25 INFO:     Waiting for child process [26884]
+2026/08/29 10:08:25 INFO:     Child process [26884] died
+2026/08/29 10:08:25 INFO:     Waiting for child process [47816]
+2026/08/29 10:08:25 INFO:     Child process [47816] died
+2026/08/29 10:08:26 INFO:     Waiting for child process [21332]
+2026/08/29 10:08:26 INFO:     Child process [21332] died
+2026/08/29 10:08:26 INFO:     Waiting for child process [3284]
+2026/08/29 10:08:26 INFO:     Child process [3284] died
+2026/08/29 10:08:27 INFO:     Waiting for child process [45560]
+2026/08/29 10:08:27 INFO:     Child process [45560] died
+2026/08/29 10:08:27 INFO:     Waiting for child process [48436]
+2026/08/29 10:08:27 INFO:     Child process [48436] died
+2026/08/29 10:08:28 INFO:     Waiting for child process [83252]
+2026/08/29 10:08:28 INFO:     Child process [83252] died
+2026/08/29 10:08:28 INFO:     Waiting for child process [54100]
+2026/08/29 10:08:28 INFO:     Child process [54100] died
+2026/08/29 10:08:29 INFO:     Waiting for child process [39552]
+2026/08/29 10:08:29 INFO:     Child process [39552] died
+2026/08/29 10:08:29 INFO:     Waiting for child process [83472]
+2026/08/29 10:08:29 INFO:     Child process [83472] died
+2026/08/29 10:08:29 INFO:     Waiting for child process [47220]
+2026/08/29 10:08:29 INFO:     Child process [47220] died
+2026/08/29 10:08:30 INFO:     Waiting for child process [31176]
+2026/08/29 10:08:30 INFO:     Child process [31176] died
+2026/08/29 10:08:30 INFO:     Waiting for child process [65380]
+2026/08/29 10:08:30 INFO:     Child process [65380] died
+2026/08/29 10:08:30 INFO:     Waiting for child process [23592]
+2026/08/29 10:08:30 INFO:     Child process [23592] died

@@ -1,0 +1,61 @@
+{
+  "best_model_name": "Logistic Regression",
+  "model_path": "models\\model.pkl",
+  "vectorizer_path": "models\\vectorizer.pkl",
+  "metrics_path": "artifacts\\training\\model_metrics.json",
+  "report_path": "artifacts\\training\\model_metrics.md",
+  "row_count": 10000,
+  "train_row_count": 8000,
+  "test_row_count": 2000,
+  "feature_count": 14199,
+  "text_columns": [
+    "name"
+  ],
+  "category_column": "main_category",
+  "sub_category_column": "sub_category",
+  "dataset_version": "bb770a5ce131bd466985ea262b53a0dec3a81f454e3e2870ca6c3139639648cf",
+  "model_version": "20260904173330",
+  "mlflow_experiment_name": null,
+  "mlflow_best_run_id": null,
+  "mlflow_registered_model_name": null,
+  "mlflow_registered_model_version": null,
+  "metrics": [
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.6165,
+      "precision": 0.6177987369624127,
+      "recall": 0.6165,
+      "f1_score": 0.5929195374580377,
+      "status": "trained",
+      "message": null
+    },
+    {
+      "model_name": "Naive Bayes",
+      "accuracy": 0.5835,
+      "precision": 0.5132702840809944,
+      "recall": 0.5835,
+      "f1_score": 0.5137028605328275,
+      "status": "trained",
+      "message": null
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.5915,
+      "precision": 0.612501884547951,
+      "recall": 0.5915,
+      "f1_score": 0.5845883045107684,
+      "status": "trained",
+      "message": null
+    },
+    {
+      "model_name": "XGBoost",
+      "accuracy": 0.603,
+      "precision": 0.5911960398304094,
+      "recall": 0.603,
+      "f1_score": 0.589267198330309,
+      "status": "trained",
+      "message": null
+    }
+  ],
+  "generated_at": "2026-09-04T17:41:19.593017+00:00"
+}

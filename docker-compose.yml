@@ -1,0 +1,70 @@
+services:
+
+  postgres:
+    image: postgres:18
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: categoryiq
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "123456"
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U postgres -d categoryiq"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/app.Dockerfile
+
+    restart: unless-stopped
+
+    environment:
+      DATABASE_URL: "postgresql://postgres:123456@postgres:5432/categoryiq"
+      FASTAPI_BASE_URL: "http://127.0.0.1:8000"
+
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    volumes:
+      - ./models:/app/models
+      - ./artifacts:/app/artifacts
+      - ./mlflow:/app/mlflow
+      - ./data:/app/data
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).read()"
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+
+
+volumes:
+  postgres_data:

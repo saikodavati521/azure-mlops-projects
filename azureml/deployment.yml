@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: productcategory-deployment
+endpoint_name: productcategory-endpoint
+model: azureml:ProductCategoryClassifier:1   # model name and version
+code_configuration:
+  code: ./azureml
+  scoring_script: score.py
+environment:
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
+instance_type: Standard_DS3_v2
+instance_count: 1

@@ -1,0 +1,57 @@
+{
+  "is_valid": false,
+  "dataset_path": "data\\raw\\Amazon-Products.csv",
+  "generated_at": "2026-07-28T12:06:30.393127+00:00",
+  "row_count": 551585,
+  "column_count": 10,
+  "columns": [
+    "Unnamed: 0",
+    "name",
+    "main_category",
+    "sub_category",
+    "image",
+    "link",
+    "ratings",
+    "no_of_ratings",
+    "discount_price",
+    "actual_price"
+  ],
+  "column_mappings": {
+    "product_name": "name",
+    "description": "name",
+    "brand": null,
+    "price": "discount_price",
+    "category": "main_category"
+  },
+  "missing_required_columns": [
+    "brand"
+  ],
+  "missing_values": {
+    "product_name": 0,
+    "description": 0,
+    "brand": 551585,
+    "price": 61163,
+    "category": 0
+  },
+  "duplicate_row_count": 0,
+  "duplicate_row_indices": [],
+  "null_category_count": 0,
+  "null_category_indices": [],
+  "invalid_category_count": 0,
+  "invalid_category_indices": [],
+  "invalid_category_values": [],
+  "empty_description_count": 0,
+  "empty_description_indices": [],
+  "incorrect_data_types": {},
+  "warnings": [
+    "Using 'name' as 'product_name' based on configured aliases.",
+    "Using 'name' as 'description' based on configured aliases.",
+    "Using 'discount_price' as 'price' based on configured aliases.",
+    "Using 'main_category' as 'category' based on configured aliases.",
+    "No allowed category list was provided; invalid category checks use format and placeholder-value rules."
+  ],
+  "errors": [
+    "Missing required columns: brand"
+  ],
+  "report_files": {}
+}

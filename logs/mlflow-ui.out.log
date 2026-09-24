@@ -1,0 +1,2 @@
+Registry store URI not provided. Using backend store URI.
+2026/08/11 09:09:15 INFO:     127.0.0.1:65406 - "GET / HTTP/1.1" 200 OK

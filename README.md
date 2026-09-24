@@ -5,6 +5,7 @@ CategoryIQ is an end-to-end, Python-based machine-learning platform for automati
 
 ARCHITECTURE : 
 
+https://github.com/saikodavati521/azure-mlops-projects/issues/1#issue-5574472107
 
 
 The project works through the following steps:

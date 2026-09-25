@@ -1,0 +1,48 @@
+{
+  "target": "Usage_kWh",
+  "selection_metric": "validation_rmse",
+  "selected_model": "random_forest",
+  "candidates": {
+    "linear_regression": {
+      "status": "trained",
+      "metrics": {
+        "validation_mae": 2.2737911064568492,
+        "validation_rmse": 3.4393742791005,
+        "validation_r2": 0.9874146451813014,
+        "test_mae": 2.5798217604245206,
+        "test_rmse": 3.5090022868391855,
+        "test_r2": 0.9874089969274586
+      }
+    },
+    "random_forest": {
+      "status": "trained",
+      "metrics": {
+        "validation_mae": 0.5753798995078474,
+        "validation_rmse": 1.1873190370912425,
+        "validation_r2": 0.9985001720305458,
+        "test_mae": 0.9068728751106887,
+        "test_rmse": 1.7705147298508237,
+        "test_r2": 0.996794527053488
+      }
+    },
+    "gradient_boosting": {
+      "status": "trained",
+      "metrics": {
+        "validation_mae": 1.1483260613911757,
+        "validation_rmse": 2.0511932353794,
+        "validation_r2": 0.9955236943111366,
+        "test_mae": 1.2482341409118274,
+        "test_rmse": 2.1260583483325073,
+        "test_r2": 0.9953778569103157
+      }
+    },
+    "xgboost": {
+      "status": "skipped",
+      "reason": "Install xgboost to include this candidate."
+    },
+    "lightgbm": {
+      "status": "skipped",
+      "reason": "Install lightgbm to include this candidate."
+    }
+  }
+}

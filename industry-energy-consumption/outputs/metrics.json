@@ -1,0 +1,9 @@
+{
+  "selected_model": "random_forest",
+  "validation_mae": 0.5753798995078474,
+  "validation_rmse": 1.1873190370912425,
+  "validation_r2": 0.9985001720305458,
+  "test_mae": 0.9068728751106887,
+  "test_rmse": 1.7705147298508237,
+  "test_r2": 0.996794527053488
+}

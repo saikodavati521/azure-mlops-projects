@@ -1,0 +1,16 @@
+name: steel-energy-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pandas
+      - numpy
+      - scikit-learn
+      - mlflow
+      - azureml-mlflow
+      - azure-ai-ml
+      - azure-identity
+      - pytest
+

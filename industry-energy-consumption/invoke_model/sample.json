@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "Lagging_Current_Reactive.Power_kVarh": 2.95,
+      "Leading_Current_Reactive_Power_kVarh": 0.0,
+      "CO2(tCO2)": 0.0,
+      "Lagging_Current_Power_Factor": 73.21,
+      "Leading_Current_Power_Factor": 100.0,
+      "NSM": 900,
+      "WeekStatus": "Weekday",
+      "Day_of_week": "Monday",
+      "Load_Type": "Light_Load",
+      "year": 2018,
+      "month": 1,
+      "day": 1,
+      "day_of_year": 1,
+      "hour": 0,
+      "hour_sin": 0.0,
+      "hour_cos": 1.0,
+      "usage_lag_1": 3.15,
+      "usage_lag_4": 3.06,
+      "usage_lag_96": 3.78,
+      "usage_lag_672": 4.12,
+      "usage_rolling_mean_4": 3.09,
+      "usage_rolling_mean_96": 3.42,
+      "usage_rolling_std_96": 0.48
+    }
+  ]
+}
+

@@ -31,7 +31,7 @@ The project works through the following steps:
 
 
 
-[Steel industry Energy Consumption with azure MLOps] (https://github.com/saikodavati521/azure-mlops-projects/tree/main/industry-energy-consumption)
+STEEL INDUSTRY ENERGY CONSUMPTION WITH AZURE MLOPS (https://github.com/saikodavati521/azure-mlops-projects/tree/main/industry-energy-consumption)
 
 Dataset:
 

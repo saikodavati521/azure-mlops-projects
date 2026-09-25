@@ -8,7 +8,7 @@ The target variable is Usage_kWh, representing electricity consumption. The data
 
 Azure MLOps Training and Prediction :
 
-https://github.com/saikodavati521/azure-mlops-projects/issues/2#issue-5585924496
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/28dee2c9-c5b2-45a1-9330-660661a04ed2" />
 
 The project implements an end-to-end Azure MLOps pipeline for training, evaluating, registering, deploying, and monitoring machine learning models.
 

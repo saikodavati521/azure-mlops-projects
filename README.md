@@ -26,6 +26,11 @@ The project works through the following steps:
 
 
 
+
+
+
+
+
 Steel Energy Consumption with azure MLOps
 
 Dataset:
@@ -35,6 +40,9 @@ This project uses the Steel Industry Energy Consumption dataset, which contains 
 The target variable is Usage_kWh, representing electricity consumption. The dataset also contains features such as timestamp, reactive power, power factor, CO2 emissions, NSM, weekday information, and load type. These features are used to develop regression models for predicting energy consumption.
 
 Azure MLOps Training and Prediction:
+
+
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/28dee2c9-c5b2-45a1-9330-660661a04ed2" />
 
 The project implements an end-to-end Azure MLOps pipeline for training, evaluating, registering, deploying, and monitoring machine learning models.
 
